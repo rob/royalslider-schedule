@@ -1,6 +1,8 @@
 # RoyalSlider Schedule Slides Add-On
 
-Schedule slides with RoyalSlider.
+This plugin adds the ability to schedule slides with [RoyalSlider](http://dimsemenov.com/plugins/royal-slider/wordpress/).
+
+**:warning:This plugin will not work without the premium [RoyalSlider](http://dimsemenov.com/plugins/royal-slider/wordpress/) WordPress plugin installed.**
 
 ![screenshot](/assets/screenshot-1.png)
 
