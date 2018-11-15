@@ -17,7 +17,7 @@
  * Plugin URI:        https://github.com/rob/royalslider-schedule
  * GitHub Plugin URI: https://github.com/rob/royalslider-schedule
  * Description:       Schedule slides with RoyalSlider.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Rob Gabaree
  * Author URI:        https://github.com/rob/royalslider-schedule
  * License:           GPLv3
@@ -36,7 +36,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'ROYALSLIDER_SCHEDULE_VERSION', '1.0.1' );
+define( 'ROYALSLIDER_SCHEDULE_VERSION', '1.0.2' );
 
 /**
  * The code that runs during plugin activation.
