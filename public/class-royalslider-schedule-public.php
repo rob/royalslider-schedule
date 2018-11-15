@@ -91,7 +91,7 @@ class Royalslider_Schedule_Public {
 
         $filtered_slides = array_filter( $slides, function( $slide ) use ( $timezone, $current_datetime ) {
 
-            $start_datetime = isset( $slide['royalslider_schedule_start_date'] ) ? $slide['royalslider_schedule_start_date'] : null;
+			$start_datetime = isset( $slide['royalslider_schedule_start_date'] ) ? $slide['royalslider_schedule_start_date'] : null;
             $end_datetime   = isset( $slide['royalslider_schedule_end_date'] )   ? $slide['royalslider_schedule_end_date']   : null;
 
             // Always show the slide if no schedule is set
@@ -99,24 +99,28 @@ class Royalslider_Schedule_Public {
                 return true;
             }
 
-            $should_display = false;
+            $should_display = true;
 
             // If a start datetime if set, check it
             if ( $start_datetime ) {
+
                 $start_datetime = new DateTime( $start_datetime, new DateTimeZone( $timezone ) );
 
-                if ( $start_datetime <= $current_datetime ) {
-                    $should_display = true;
-                }
+                if ( $start_datetime >= $current_datetime ) {
+                    $should_display = false;
+				}
+				
             }
 
             // If an end datetime if set, check it
             if ( $end_datetime ) {
+
                 $end_datetime = new DateTime( $end_datetime, new DateTimeZone( $timezone ) );
 
-                if ( $end_datetime >= $current_datetime ) {
-                    $should_display = true;
-                }
+                if ( $end_datetime <= $current_datetime ) {
+                    $should_display = false;
+				}
+				
             }
 
             return $should_display;
