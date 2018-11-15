@@ -3,7 +3,7 @@ Contributors: rawb
 Tags: royalslider, slideshow, schedule
 Requires at least: 4.9
 Tested up to: 4.9
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -29,6 +29,9 @@ The plugin uses the timezone set under Settings > General when determining slide
 2. Scheduling slides
 
 == Changelog ==
+
+= 1.0.1 =
+* Testing GitHub auto-update.
 
 = 1.0.0 =
 * Initial release.
