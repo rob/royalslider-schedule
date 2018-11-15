@@ -15,6 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       RoyalSlider Schedule Slides Add-On
  * Plugin URI:        https://github.com/rob/royalslider-schedule
+ * GitHub Plugin URI: https://github.com/rob/royalslider-schedule
  * Description:       Schedule slides with RoyalSlider.
  * Version:           1.0.0
  * Author:            Rob Gabaree
