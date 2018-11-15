@@ -60,7 +60,7 @@ class Royalslider_Schedule_Admin {
     public function enqueue_styles() {
         
         // DateRangePicker
-        wp_enqueue_style( 'royalslider-schedule-daterangepicker', 'https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css', array(), null, 'all' );
+        wp_enqueue_style( 'royalslider-schedule-daterangepicker', plugin_dir_url(__FILE__) . 'vendor/daterangepicker/3.0.3/daterangepicker.css', array(), '3.0.3', 'all' );
 
     }
 
@@ -72,8 +72,8 @@ class Royalslider_Schedule_Admin {
     public function enqueue_scripts() {
 
         // DateRangePicker
-        wp_enqueue_script( 'royalslider-schedule-moment', 'https://cdn.jsdelivr.net/npm/moment/moment.min.js', array( 'jquery' ), null, true );
-        wp_enqueue_script( 'royalslider-schedule-daterangepicker', 'https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js', array( 'royalslider-schedule-moment' ), null, true );
+        wp_enqueue_script( 'royalslider-schedule-moment', plugin_dir_url(__FILE__) . 'vendor/moment.js/2.22.2/moment.min.js', array( 'jquery' ), '2.22.2', true );
+        wp_enqueue_script( 'royalslider-schedule-daterangepicker', plugin_dir_url(__FILE__) . 'vendor/daterangepicker/3.0.3/daterangepicker.js', array( 'royalslider-schedule-moment' ), '3.0.3', true );
 
         // Administration
         wp_enqueue_script( $this->plugin_name, plugin_dir_url(__FILE__) . 'js/royalslider-schedule-admin.js', array( 'royalslider-schedule-daterangepicker' ), $this->version, true );
